@@ -198,19 +198,19 @@
 <div class="pl-3 pr-4 formi">
   <div class="container-fluid ml-3 bg-primary opacity-3  mb-5 rounded  mt-3"id="forms">
       <h1 class="headings">Contact Us:</h1>
-    <form action="#" class="form">
+    <form action="/" class="form"method="POST">
         <div class="form-group">
           <label for="usr">Name:</label>
-          <input type="text" class="form-control" id="usr">
+          <input type="text"name="userNames" class="form-control" id="usr">
   </div>
         <div class="form-group">
           <label for="email">Email:</label>    
-          <input type="email"class="form-control"id="email"name="email">
+          <input type="email"name="emails"class="form-control"id="email"name="email">
         
         </div>
       <div class="form-group">
           <label for="comment">Comment:</label>
-          <textarea class="form-control" rows="5" id="comment"></textarea>
+          <textarea class="form-control"name="comments" rows="5" id="comment"></textarea>
       </div> 
     <button class="btn btn-light m-2"
       type="submit">submit</button>
@@ -290,7 +290,9 @@
 
   <!-- Copyright -->
 
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:Arav Enterprises
+    <div class="footer-copyright text-center py-3">
+    <p>© Copyright <script>document.write(new Date().getFullYear())</script> 
+     Copyright:Arav Enterprises
     </div>
   </footer>
 </html>
